@@ -1,0 +1,12 @@
+{
+  "name": "jn-base-academy",
+  "version": "1.0.0",
+  "description": "Junaid Nizami Base Academy Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
