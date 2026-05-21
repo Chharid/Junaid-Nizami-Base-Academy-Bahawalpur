@@ -245,18 +245,6 @@ nav {
 .admin-link-btn { display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 1.5px solid var(--border); color: var(--muted); padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.2s; font-family: 'Nunito',sans-serif; }
 .admin-link-btn:hover { border-color: var(--green); color: var(--green); }
 
-/* FOOTER */
-footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5% 30px; }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; margin-bottom: 40px; max-width: 1100px; }
-.footer-brand-name { font-family: 'Merriweather',serif; font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 10px; }
-.footer-brand p { font-size: 13.5px; line-height: 1.8; max-width: 280px; }
-.footer-col h4 { font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 16px; }
-.footer-col a { display: block; color: rgba(255,255,255,0.72); font-size: 13.5px; text-decoration: none; margin-bottom: 9px; transition: color 0.2s; }
-.footer-col a:hover { color: #fff; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.12); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; max-width: 1100px; }
-.footer-bottom p { font-size: 12.5px; color: rgba(255,255,255,0.45); }
-.formula { font-size: 12px; color: rgba(255,255,255,0.2); font-family: monospace; letter-spacing: 2px; }
-
 /* WHATSAPP FLOAT */
 .wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 999; width: 56px; height: 56px; border-radius: 50%; background: #25d366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: 0 4px 18px rgba(37,211,102,0.5); text-decoration: none; transition: transform 0.2s,box-shadow 0.2s; }
 .wa-float:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(37,211,102,0.6); }
@@ -291,6 +279,10 @@ footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5
   .footer-bottom{flex-direction:column;text-align:center;}
 }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Nunito:wght@400;600;700;800&family=Caveat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -318,6 +310,7 @@ footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5
     <a href="#courses">Courses</a>
     <a href="#batches">Batches</a>
     <a href="#testimonials">Reviews</a>
+    <a href="#team">Team</a>
     <a href="#enroll" class="nav-cta">Enroll Now →</a>
   </div>
   <button class="hamburger" onclick="openMenu()"><span></span><span></span><span></span></button>
@@ -330,6 +323,7 @@ footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5
   <a href="#courses" onclick="closeMenu()">Courses</a>
   <a href="#batches" onclick="closeMenu()">Batch History</a>
   <a href="#testimonials" onclick="closeMenu()">Student Reviews</a>
+  <a href="#team" onclick="closeMenu()">Our Team</a>
   <a href="#enroll" onclick="closeMenu()" class="mn-cta">Enroll in Batch 15 →</a>
 </div>
 
@@ -444,6 +438,32 @@ footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5
   </div>
 </section>
 
+<!-- BATCHES -->
+<div class="batches-wrapper" id="batches">
+  <div class="section">
+    <div class="section-tag">Track Record</div>
+    <h2 class="section-h2">15 Batches. 15 Years.</h2>
+    <p class="section-sub">Every batch has produced board toppers, MDCAT qualifiers, and engineers. Here's the full journey.</p>
+    <div class="batches-grid">
+      <div class="batch-card reveal"><div class="bn">01</div><div class="bl">BATCH</div><div class="by">2009–10</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">02</div><div class="bl">BATCH</div><div class="by">2010–11</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">03</div><div class="bl">BATCH</div><div class="by">2011–12</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">04</div><div class="bl">BATCH</div><div class="by">2012–13</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">05</div><div class="bl">BATCH</div><div class="by">2013–14</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">06</div><div class="bl">BATCH</div><div class="by">2014–15</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">07</div><div class="bl">BATCH</div><div class="by">2015–16</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">08</div><div class="bl">BATCH</div><div class="by">2016–17</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">09</div><div class="bl">BATCH</div><div class="by">2018–19</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">10</div><div class="bl">BATCH</div><div class="by">2019–20</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">11</div><div class="bl">BATCH</div><div class="by">2020–21</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">12</div><div class="bl">BATCH</div><div class="by">2021–22</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">13</div><div class="bl">BATCH</div><div class="by">2022–23</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card reveal"><div class="bn">14</div><div class="bl">BATCH</div><div class="by">2023–24</div><div class="bstatus done">Completed</div></div>
+      <div class="batch-card live reveal"><div class="bn">15</div><div class="bl">BATCH</div><div class="by">2025–26</div><div class="bstatus enrolling">🟢 Enrolling</div></div>
+    </div>
+  </div>
+</div>
+
 <!-- TESTIMONIALS -->
 <section class="section" id="testimonials">
   <div class="section-tag">Student Reviews</div>
@@ -539,34 +559,59 @@ footer { background: var(--green); color: rgba(255,255,255,0.8); padding: 52px 5
   <a href="admin.html" class="admin-link-btn">🔐 Admin Portal</a>
 </div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="footer-brand-name">Junaid Nizami Base Academy</div>
-      <p>Teaching chemistry in Bahawalpur since 2009. 15 years, 15 batches, and hundreds of successful students across Punjab.</p>
-      <div class="footer-brand-name">Junaid Nizami Base Academy</div>
+<!-- TEAM / LEADERSHIP SECTION -->
+<section id="team" style="padding: 80px 20px; background: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <h2 style="margin: 0 0 16px; font-size: 36px; color: #0f172a; font-weight: 700;">Our Leadership Team</h2>
+            <p style="margin: 0; font-size: 18px; color: #64748b;">Meet the educators behind Base Academy's success</p>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+            
+            <!-- Junaid Nizami -->
+            <div style="background: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+                <div style="width: 100px; height: 100px; margin: 0 auto 24px; border-radius: 50%; background: linear-gradient(135deg, #1b4d35, #2e7d52); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(27,77,53,0.3); overflow: hidden; position: relative; flex-shrink: 0;">
+                    <img src="JN.jpg" alt="Junaid Nizami" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; position: absolute; inset: 0; font-family: 'Merriweather', serif; font-size: 32px; font-weight: 900; color: #fff;"></span>
+                </div>
+                <h3 style="margin: 0 0 8px; font-size: 24px; color: #0f172a; font-weight: 700;">Junaid Nizami</h3>
+                <p style="margin: 0 0 20px; color: #38bdf8; font-size: 16px; font-weight: 600;">Chemistry Instructor</p>
+                <p style="margin: 0 0 24px; color: #64748b; font-size: 15px; line-height: 1.6;">
+                    15 years of teaching Chemistry in Bahawalpur. Completed 15 batches with hundreds of students topping board exams, clearing MDCAT and ECAT. Covers full syllabus for both Punjab Board and Federal Board. Holds BS Chemistry and M.Phil Chemistry degrees.
+                </p>
+                
+            </div>
+            
+            <!-- Arshad Khan Sadozai -->
+            <div style="background: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+                <div style="width: 100px; height: 100px; margin: 0 auto 24px; border-radius: 50%; background: linear-gradient(135deg, #a78bfa, #8b5cf6); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(167,139,250,0.3); overflow: hidden; position: relative; flex-shrink: 0;">
+                    <img src="AK.jpg" alt="Arshad Khan Sadozai" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; position: absolute; inset: 0; font-family: 'Merriweather', serif; font-size: 32px; font-weight: 900; color: #fff;"></span>
+                </div>
+                <h3 style="margin: 0 0 8px; font-size: 24px; color: #0f172a; font-weight: 700;">Arshad Khan Sadozai</h3>
+                <p style="margin: 0 0 20px; color: #a78bfa; font-size: 16px; font-weight: 600;">English Instructor</p>
+                <p style="margin: 0 0 24px; color: #64748b; font-size: 15px; line-height: 1.6;">
+                    Co-founder and English instructor at Base Academy. Teaches English language and literature to Matric and FSc students. Focuses on concept-based learning rather than rote memorization — strengthening both writing skills and comprehension for board exams.
+                </p>
+            </div>
+            
+            <!-- Syed Mohsin -->
+            <div style="background: #fff; border-radius: 16px; padding: 40px 32px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #e2e8f0;">
+                <div style="width: 100px; height: 100px; margin: 0 auto 24px; border-radius: 50%; background: linear-gradient(135deg, #34d399, #10b981); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 16px rgba(52,211,153,0.3); overflow: hidden; position: relative; flex-shrink: 0;">
+                    <img src="SM.jpg" alt="Syed Mohsin" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <span style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; position: absolute; inset: 0; font-family: 'Merriweather', serif; font-size: 32px; font-weight: 900; color: #fff;"></span>
+                </div>
+                <h3 style="margin: 0 0 8px; font-size: 24px; color: #0f172a; font-weight: 700;">Syed Mohsin</h3>
+                <p style="margin: 0 0 20px; color: #34d399; font-size: 16px; font-weight: 600;">Administrator</p>
+                <p style="margin: 0 0 24px; color: #64748b; font-size: 15px; line-height: 1.6;">
+                    Administrator at Base Academy. Manages admissions, scheduling, and all student affairs. Keeps daily operations running smoothly so teachers can focus on teaching and students face zero distractions.
+                </p>
+            </div>
+            
+        </div>
     </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <a href="#about">About Sir Junaid</a>
-      <a href="#courses">Courses</a>
-      <a href="#batches">Batch History</a>
-      <a href="#testimonials">Student Reviews</a>
-      <a href="#enroll">Enroll Now</a>
-    </div>
-    <div class="footer-col">
-      <h4>Courses</h4>
-      <a href="#courses">Matric Chemistry</a>
-      <a href="#courses">FSc Pre-Medical</a>
-      <a href="#courses">FSc Pre-Engineering</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 Junaid Nizami Base Academy, Bahawalpur. All rights reserved.</p>
-    <div class="formula">H₂O · NaCl · CH₄ · H₂SO₄</div>
-  </div>
-</footer>
+</section>
 
 <script>
 function openMenu()  { document.getElementById('mobileNav').classList.add('open');    document.body.style.overflow='hidden'; }
@@ -622,7 +667,7 @@ function handleEnroll(){
 
   // Send WhatsApp notification to Sir Junaid
   const waMsg =
-`*🆕 New Enrollment Request — JN Base Academy*
+`*🆕 New Enrollment Request —  Base Academy*
 
 👤 *Student:* ${name}
 👨 *Father:* ${father || 'N/A'}
@@ -642,5 +687,113 @@ _Reply to confirm their seat in Batch 15._`;
   }, 300);
 }
 </script>
+
+<footer style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #e2e8f0; font-family: system-ui, -apple-system, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 60px 20px 30px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 48px; margin-bottom: 40px;">
+
+            <!-- Base Academy FIRST -->
+            <div>
+                <h3 style="margin: 0 0 20px; font-size: 24px; color: #fff; font-weight: 700; letter-spacing: -0.5px;">
+                    <i class="fas fa-graduation-cap" style="color: #38bdf8; margin-right: 8px;"></i>Base Academy
+                </h3>
+                <p style="margin: 0 0 20px; line-height: 1.8; color: #cbd5e1; font-size: 15px;">
+                    Premier coaching institute in Bahawalpur for Matric & FSc Chemistry. Concept-based learning and personalized mentoring.
+                </p>
+                <div style="margin: 0 0 20px; color: #cbd5e1; font-size: 14px; line-height: 2;">
+                    <p style="margin: 0;"><i class="fas fa-map-marker-alt" style="color: #38bdf8; width: 20px;"></i> Gulf Center building near One Unit Chowk, adjacent to Premier, in Shadab Colony, Bahawalpur</p>
+                    <p style="margin: 0;"><i class="fas fa-phone" style="color: #38bdf8; width: 20px;"></i> +92 300 8125202</p>
+                    <p style="margin: 0;"><i class="fas fa-envelope" style="color: #38bdf8; width: 20px;"></i> info@baseacademy.pk</p>
+                </div>
+                <div style="display: flex; gap: 14px;">
+                    <a href="https://www.facebook.com/baseacademysatellitetownbwp" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/baseacademysatellitetownbwp?fbclid=IwY2xjawR7pltleHRuA2FlbQIxMABicmlkETFPeG9XZ0R1N3RCSnRBSFlic3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHoBD3P_RbX7GIN6QQPPM74Y8G7PeBjdG9sJj0AuHpTCoBM5K5WEZ3DoG2ghs_aem_IVytyCQxR7SR4Tau6pyZEgy" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.google.com/maps/place/BASE+Academy+Bahawalpur/@29.3869278,71.7023973,17z/data=!3m1!4b1!4m6!3m5!1s0x393b91c69fcb67c1:0xd60eb9dc531f2672!8m2!3d29.3869232!4d71.7049722!16s%2Fg%2F11ljskhj92?entry=ttu&g_ep=EgoyMDI2MDUxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fas fa-map-marker-alt"></i></a>
+                    
+                </div>
+            </div>
+
+            <!-- Junaid Nizami -->
+            <div>
+                <h3 style="margin: 0 0 20px; font-size: 24px; color: #fff; font-weight: 700; letter-spacing: -0.5px;">
+                    <i class="fas fa-flask" style="color: #38bdf8; margin-right: 8px;"></i>Junaid Nizami
+                </h3>
+                <p style="margin: 0 0 24px; line-height: 1.8; color: #cbd5e1; font-size: 15px;">
+                    Teaching chemistry in Bahawalpur since 2009. 15 years, 15 batches, and hundreds of successful students across Punjab.
+                </p>
+                <div style="display: flex; gap: 14px;">
+                    <a href="https://www.facebook.com/junaid.nizami.562" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hafiz_mjunaid/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/923008125202" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Arshad Khan Sadozai -->
+            <div>
+                <h3 style="margin: 0 0 20px; font-size: 24px; color: #fff; font-weight: 700; letter-spacing: -0.5px;">
+                    <i class="fas fa-book" style="color: #a78bfa; margin-right: 8px;"></i>Arshad Khan Sadozai
+                </h3>
+                <p style="margin: 0 0 24px; line-height: 1.8; color: #cbd5e1; font-size: 15px;">
+                    Co-founder & English Instructor at Base Academy. Teaching English language & literature to Matric and FSc students in Bahawalpur.
+                </p>
+                <div style="display: flex; gap: 14px;">
+                    <a href="https://www.facebook.com/arshadrgp" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/arshadkhansadozai/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Syed Mohsin -->
+            <div>
+                <h3 style="margin: 0 0 20px; font-size: 24px; color: #fff; font-weight: 700; letter-spacing: -0.5px;">
+                    <i class="fas fa-user-tie" style="color: #34d399; margin-right: 8px;"></i>Syed Mohsin
+                </h3>
+                <p style="margin: 0 0 24px; line-height: 1.8; color: #cbd5e1; font-size: 15px;">
+                    Administrator at Base Academy. Manages admissions, scheduling, and all student affairs to keep the academy running smoothly.
+                </p>
+                <div style="display: flex; gap: 14px;">
+                    <a href="https://www.facebook.com/syed.mohsin.7568" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/syedmohsin606/" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; background: #334155; color: #e2e8f0; border-radius: 8px; text-decoration: none; transition: all 0.3s;"><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 style="margin: 0 0 20px; font-size: 18px; color: #fff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Quick Links</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 12px;"><a href="#about" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>About Sir Junaid</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#courses" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>Courses</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#batches" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>Batch History</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#testimonials" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>Student Reviews</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#team" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>Our Team</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#enroll" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-chevron-right" style="font-size: 10px; margin-right: 8px; color: #38bdf8;"></i>Enroll Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Courses -->
+            <div>
+                <h4 style="margin: 0 0 20px; font-size: 18px; color: #fff; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Courses</h4>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 12px;"><a href="#courses" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-atom" style="font-size: 12px; margin-right: 8px; color: #38bdf8;"></i>Matric Chemistry</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#courses" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-atom" style="font-size: 12px; margin-right: 8px; color: #38bdf8;"></i>FSc Pre-Medical</a></li>
+                    <li style="margin-bottom: 12px;"><a href="#courses" style="color: #cbd5e1; text-decoration: none; font-size: 15px;"><i class="fas fa-atom" style="font-size: 12px; margin-right: 8px; color: #38bdf8;"></i>FSc Pre-Engineering</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    
+    <div style="background: #0f172a; border-top: 1px solid #334155;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 24px 20px; text-align: center;">
+            <p style="margin: 0 0 12px; color: #38bdf8; font-size: 16px; letter-spacing: 2px; font-weight: 500;">
+              BASE Academy=(Knowledge+Practice+Discipline)×Consistency=Success
+            </p>
+            <p style="margin: 0; color: #94a3b8; font-size: 14px;">
+                © 2026 Junaid Nizami Base Academy, Bahawalpur. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
